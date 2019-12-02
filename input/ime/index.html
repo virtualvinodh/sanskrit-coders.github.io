@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>संस्कृत-साङ्गणकाः Sanskrit Programmers  | IME/ typing</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+
+    <meta property="og:title" content="IME/ typing" />
+<meta property="og:description" content="Multi-platform solutions  Keyman (from the christian org SIL)  Downloaded site here. devanAgarI ITRANS-based vedic keyboard - KM cloud. web based version here.   Linux m17n with ibus. Necessary packages:  debian search here.  Suggested ubuntu packages: ibus sanskrit iBus-m17n ibus-qt4 m17n-db m17n-contrib ttf-indic-fonts . See our note here.  Debugging / update tips  Restart ibus: ibus-daemon -Rd MDEBUG_INPUT=1 m17n-edit &ndash;im hi-optitransv2 Configure: m17n-im-config or http://i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sanskrit-coders.github.io/input/ime/" />
+
+<meta itemprop="name" content="IME/ typing">
+<meta itemprop="description" content="Multi-platform solutions  Keyman (from the christian org SIL)  Downloaded site here. devanAgarI ITRANS-based vedic keyboard - KM cloud. web based version here.   Linux m17n with ibus. Necessary packages:  debian search here.  Suggested ubuntu packages: ibus sanskrit iBus-m17n ibus-qt4 m17n-db m17n-contrib ttf-indic-fonts . See our note here.  Debugging / update tips  Restart ibus: ibus-daemon -Rd MDEBUG_INPUT=1 m17n-edit &ndash;im hi-optitransv2 Configure: m17n-im-config or http://i.">
+
+
+
+<meta itemprop="wordCount" content="124">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IME/ typing"/>
+<meta name="twitter:description" content="Multi-platform solutions  Keyman (from the christian org SIL)  Downloaded site here. devanAgarI ITRANS-based vedic keyboard - KM cloud. web based version here.   Linux m17n with ibus. Necessary packages:  debian search here.  Suggested ubuntu packages: ibus sanskrit iBus-m17n ibus-qt4 m17n-db m17n-contrib ttf-indic-fonts . See our note here.  Debugging / update tips  Restart ibus: ibus-daemon -Rd MDEBUG_INPUT=1 m17n-edit &ndash;im hi-optitransv2 Configure: m17n-im-config or http://i."/>
+
+      
+    
+    
+    <script type="text/javascript">
+    
+    let baseURL = "https:\/\/sanskrit-coders.github.io\/";
+    let basePath = "/" + baseURL.split("/").slice(3).join("/");
+    let siteParams = JSON.parse("{\x22contactlink\x22:\x22https:\/\/github.com\/sanskrit-coders\/sanskrit-coders.github.io\/issues\/new\x22,\x22disqusshortcode\x22:\x22sanskrit-coders-site\x22,\x22env\x22:\x22production\x22,\x22githubeditmepathbase\x22:\x22https:\/\/github.com\/sanskrit-coders\/sanskrit-coders.github.io\/edit\/hugo-source\/content\/\x22,\x22mainSections\x22:[\x22content\x22],\x22mainsections\x22:[\x22content\x22]}");
+    let pageDefaultsList = JSON.parse("[{\x22scope\x22:{\x22pathPrefix\x22:\x22\x22},\x22values\x22:{\x22comments\x22:true,\x22layout\x22:\x22page\x22,\x22search\x22:true,\x22sidebar\x22:\x22home_sidebar\x22}}]");
+    let sidebarsData = JSON.parse("{\x22home_sidebar\x22:{\x22contents\x22:[{\x22title\x22:\x22Home\x22,\x22url\x22:\x22\/\x22},{\x22title\x22:\x22Motivation\x22,\x22url\x22:\x22\/motivation\/\x22},{\x22title\x22:\x22Blog\x22,\x22url\x22:\x22\/posts\/\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/content\/\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/content\/audio\/\x22}],\x22title\x22:\x22Audio\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/content\/fonts\/\x22}],\x22title\x22:\x22Fonts\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/content\/ocr\/\x22}],\x22title\x22:\x22Digitization, OCR\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/content\/site_transliteration\/\x22}],\x22title\x22:\x22Transliteration\x22}],\x22title\x22:\x22Content- Publish, Read\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/input\/\x22}],\x22title\x22:\x22Input\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/dictionaries\/\x22}],\x22title\x22:\x22Dictionaries\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/grammar\/\x22}],\x22title\x22:\x22Grammar\x22},{\x22contents\x22:[{\x22url\x22:\x22dir:\/\/tips\/\x22}],\x22title\x22:\x22General tips\x22},{\x22title\x22:\x22Astronomy\x22,\x22url\x22:\x22\/astronomy\/\x22},{\x22title\x22:\x22Misc tools\x22,\x22url\x22:\x22\/misc-tools\/\x22},{\x22title\x22:\x22\\u003ci class=\\\x22fas fa-hand-holding-heart\\\x22\\u003e\\u003c\/i\\u003eDonate\x22,\x22url\x22:\x22https:\/\/vvasuki.github.io\/interests\/dharma-via-vishvas\/\x22}],\x22title\x22:\x22Parts\x22},\x22topnav\x22:{\x22contents\x22:[{\x22title\x22:\x22Tools\x22,\x22url\x22:\x22\/pages\/index.html\x22},{\x22title\x22:\x22Blog\x22,\x22url\x22:\x22\/pages\/blog\/index.html\x22}],\x22title\x22:\x22Parts\x22}}");
+    let autocompletePageUrl = "\/data\/pages.tsv";
+
+    var pageUrlToParams = new Map();
+    
+    
+    
+    
+    pageUrlToParams.set("\/posts\/2018-06-05-ocr-comparison\/", JSON.parse("{\x22author\x22:\x22Arun\x22,\x22author_link\x22:\x22https:\/\/github.com\/akprasad\x22,\x22date\x22:\x222018-06-05T00:00:00Z\x22,\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22lastmod\x22:\x222018-06-05T00:00:00Z\x22,\x22publishdate\x22:\x222018-06-05T00:00:00Z\x22,\x22summary\x22:\x22SanskritOCR vs. Google OCR.\x22,\x22tags\x22:[\x22news\x22],\x22title\x22:\x22SanskritOCR vs. Google OCR\x22}"));
+    
+    
+    pageUrlToParams.set("\/posts\/2018-06-01-site-moved\/", JSON.parse("{\x22date\x22:\x222018-06-01T00:00:00Z\x22,\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22lastmod\x22:\x222019-02-05T00:00:00Z\x22,\x22publishdate\x22:\x222018-06-01T00:00:00Z\x22,\x22summary\x22:\x22Sanskrit software catalog site moved.\x22,\x22tags\x22:[\x22news\x22],\x22title\x22:\x22Sanskrit software catalog site moved.\x22}"));
+    
+    
+    pageUrlToParams.set("\/posts\/2015-03-22-mountain-view-meetup\/", JSON.parse("{\x22date\x22:\x222015-03-22T00:00:00Z\x22,\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22lastmod\x22:\x222015-03-22T00:00:00Z\x22,\x22publishdate\x22:\x222015-03-22T00:00:00Z\x22,\x22summary\x22:\x22Notes from a rare meeting.\x22,\x22tags\x22:[\x22news\x22],\x22title\x22:\x22Mountain view Sanskrit meetup\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/site_transliteration\/aksharamukha_demo\/", JSON.parse("{}"));
+    
+    
+    pageUrlToParams.set("\/posts\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bBlog\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bContent\x22}"));
+    
+    
+    pageUrlToParams.set("\/dictionaries\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bDictionaries\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/fonts\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bFonts\x22}"));
+    
+    
+    pageUrlToParams.set("\/grammar\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bGrammar\x22}"));
+    
+    
+    pageUrlToParams.set("\/input\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bInput\x22}"));
+    
+    
+    pageUrlToParams.set("\/dictionaries\/formats\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bMisc dict formats\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/ocr\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22\x2bOCR\x22}"));
+    
+    
+    pageUrlToParams.set("\/astronomy\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Astronomy\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/audio\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Audio\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/books\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Books\x22}"));
+    
+    
+    pageUrlToParams.set("\/categories\/", JSON.parse("null"));
+    
+    
+    pageUrlToParams.set("\/content\/ocr\/corrections\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Corrections\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/deep-reading\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Deep reading\x22}"));
+    
+    
+    pageUrlToParams.set("\/tips\/dev-tools\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Dev tools\x22}"));
+    
+    
+    pageUrlToParams.set("\/dictionaries\/flashcards\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Flashcards\x22}"));
+    
+    
+    pageUrlToParams.set("\/tags\/getting_started\/", JSON.parse("null"));
+    
+    
+    pageUrlToParams.set("\/input\/ime\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22IME\/ typing\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/law\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Law- copyright etc..\x22}"));
+    
+    
+    pageUrlToParams.set("\/tips\/license\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Lincense and Source\x22}"));
+    
+    
+    pageUrlToParams.set("\/grammar\/misc\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Misc tools\x22}"));
+    
+    
+    pageUrlToParams.set("\/misc-tools\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Misc tools\x22}"));
+    
+    
+    pageUrlToParams.set("\/motivation\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22sidebar\x22:\x22home_sidebar\x22,\x22summary\x22:\x22Motivation.\x22,\x22tags\x22:[\x22getting_started\x22],\x22title\x22:\x22Motivations\x22}"));
+    
+    
+    pageUrlToParams.set("\/tags\/news\/", JSON.parse("null"));
+    
+    
+    pageUrlToParams.set("\/dictionaries\/offline\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Offline dicts\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/offline-web\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Offline websites\x22}"));
+    
+    
+    pageUrlToParams.set("\/input\/optitrans\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Optitrans\x22}"));
+    
+    
+    pageUrlToParams.set("\/grammar\/parsing\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Parsing and Translation\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/audio\/podcasts\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Podcasts\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/ocr\/ocr-ing\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Procedure\x22}"));
+    
+    
+    pageUrlToParams.set("\/tips\/py-unicode\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Py Unicode\x22}"));
+    
+    
+    pageUrlToParams.set("\/grammar\/sandhi-samAsa\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Sandhi and samAsa\x22}"));
+    
+    
+    pageUrlToParams.set("\/search\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22layout\x22:\x22search\x22,\x22sitemap\x22:{\x22ChangeFreq\x22:\x22\x22,\x22Priority\x22:0.1,\x22Filename\x22:\x22sitemap.xml\x22},\x22title\x22:\x22Search Results\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/site_transliteration\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Site transliteration\x22}"));
+    
+    
+    pageUrlToParams.set("\/dictionaries\/spellcheck\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Spell checking\x22}"));
+    
+    
+    pageUrlToParams.set("\/tags\/", JSON.parse("null"));
+    
+    
+    pageUrlToParams.set("\/content\/fonts\/testing\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Testing\x22}"));
+    
+    
+    pageUrlToParams.set("\/tips\/", JSON.parse("null"));
+    
+    
+    pageUrlToParams.set("\/content\/translations\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Translations\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/websites\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Websites and blogs\x22}"));
+    
+    
+    pageUrlToParams.set("\/content\/wikis\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Wikis\x22}"));
+    
+    
+    pageUrlToParams.set("\/grammar\/word-from-root\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22Word from root\x22}"));
+    
+    
+    pageUrlToParams.set("\/custom_site_search\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22title\x22:\x22जालक्षेत्रमिदमन्विष्यताम्\x22}"));
+    
+    
+    pageUrlToParams.set("\/", JSON.parse("{\x22draft\x22:false,\x22iscjklanguage\x22:false,\x22permalink\x22:\x22index.html\x22,\x22sidebar\x22:\x22home_sidebar\x22,\x22summary\x22:\x22Welcome page.\x22,\x22tags\x22:[\x22getting_started\x22],\x22title\x22:\x22संस्कृत-साङ्गणकाः Sanskrit coders\x22}"));
+    
+
+    var pageUrlToFileParams = new Map();
+    
+    
+    
+    
+    pageUrlToFileParams.set("\/posts\/2018-06-05-ocr-comparison\/", JSON.parse(`{
+      "path": "posts\/2018-06-05-ocr-comparison.md",
+      "logicalName": "2018-06-05-ocr-comparison.md",
+      "baseFileName": "2018-06-05-ocr-comparison",
+      "dir": "posts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/posts\/2018-06-01-site-moved\/", JSON.parse(`{
+      "path": "posts\/2018-06-01-site-moved.md",
+      "logicalName": "2018-06-01-site-moved.md",
+      "baseFileName": "2018-06-01-site-moved",
+      "dir": "posts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/posts\/2015-03-22-mountain-view-meetup\/", JSON.parse(`{
+      "path": "posts\/2015-03-22-mountain-view-meetup.md",
+      "logicalName": "2015-03-22-mountain-view-meetup.md",
+      "baseFileName": "2015-03-22-mountain-view-meetup",
+      "dir": "posts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/site_transliteration\/aksharamukha_demo\/", JSON.parse(`{
+      "path": "content\/site_transliteration\/aksharamukha_demo.html",
+      "logicalName": "aksharamukha_demo.html",
+      "baseFileName": "aksharamukha_demo",
+      "dir": "content\/site_transliteration\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/posts\/", JSON.parse(`{
+      "path": "posts\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "posts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/", JSON.parse(`{
+      "path": "content\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/dictionaries\/", JSON.parse(`{
+      "path": "dictionaries\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "dictionaries\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/fonts\/", JSON.parse(`{
+      "path": "content\/fonts\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "content\/fonts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/grammar\/", JSON.parse(`{
+      "path": "grammar\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "grammar\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/input\/", JSON.parse(`{
+      "path": "input\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "input\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/dictionaries\/formats\/", JSON.parse(`{
+      "path": "dictionaries\/formats\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "dictionaries\/formats\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/ocr\/", JSON.parse(`{
+      "path": "content\/ocr\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "content\/ocr\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/astronomy\/", JSON.parse(`{
+      "path": "astronomy.md",
+      "logicalName": "astronomy.md",
+      "baseFileName": "astronomy",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/audio\/", JSON.parse(`{
+      "path": "content\/audio\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "content\/audio\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/books\/", JSON.parse(`{
+      "path": "content\/books.md",
+      "logicalName": "books.md",
+      "baseFileName": "books",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/categories\/", JSON.parse(`{
+      "path": "",
+      "logicalName": "",
+      "baseFileName": "",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/ocr\/corrections\/", JSON.parse(`{
+      "path": "content\/ocr\/corrections.md",
+      "logicalName": "corrections.md",
+      "baseFileName": "corrections",
+      "dir": "content\/ocr\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/deep-reading\/", JSON.parse(`{
+      "path": "content\/deep-reading.md",
+      "logicalName": "deep-reading.md",
+      "baseFileName": "deep-reading",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tips\/dev-tools\/", JSON.parse(`{
+      "path": "tips\/dev-tools.md",
+      "logicalName": "dev-tools.md",
+      "baseFileName": "dev-tools",
+      "dir": "tips\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/dictionaries\/flashcards\/", JSON.parse(`{
+      "path": "dictionaries\/flashcards.md",
+      "logicalName": "flashcards.md",
+      "baseFileName": "flashcards",
+      "dir": "dictionaries\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tags\/getting_started\/", JSON.parse(`{
+      "path": "",
+      "logicalName": "",
+      "baseFileName": "",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/input\/ime\/", JSON.parse(`{
+      "path": "input\/ime.md",
+      "logicalName": "ime.md",
+      "baseFileName": "ime",
+      "dir": "input\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/law\/", JSON.parse(`{
+      "path": "content\/law.md",
+      "logicalName": "law.md",
+      "baseFileName": "law",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tips\/license\/", JSON.parse(`{
+      "path": "tips\/license.md",
+      "logicalName": "license.md",
+      "baseFileName": "license",
+      "dir": "tips\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/grammar\/misc\/", JSON.parse(`{
+      "path": "grammar\/misc.md",
+      "logicalName": "misc.md",
+      "baseFileName": "misc",
+      "dir": "grammar\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/misc-tools\/", JSON.parse(`{
+      "path": "misc-tools.md",
+      "logicalName": "misc-tools.md",
+      "baseFileName": "misc-tools",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/motivation\/", JSON.parse(`{
+      "path": "motivation.md",
+      "logicalName": "motivation.md",
+      "baseFileName": "motivation",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tags\/news\/", JSON.parse(`{
+      "path": "",
+      "logicalName": "",
+      "baseFileName": "",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/dictionaries\/offline\/", JSON.parse(`{
+      "path": "dictionaries\/offline.md",
+      "logicalName": "offline.md",
+      "baseFileName": "offline",
+      "dir": "dictionaries\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/offline-web\/", JSON.parse(`{
+      "path": "content\/offline-web.md",
+      "logicalName": "offline-web.md",
+      "baseFileName": "offline-web",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/input\/optitrans\/", JSON.parse(`{
+      "path": "input\/optitrans.md",
+      "logicalName": "optitrans.md",
+      "baseFileName": "optitrans",
+      "dir": "input\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/grammar\/parsing\/", JSON.parse(`{
+      "path": "grammar\/parsing.md",
+      "logicalName": "parsing.md",
+      "baseFileName": "parsing",
+      "dir": "grammar\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/audio\/podcasts\/", JSON.parse(`{
+      "path": "content\/audio\/podcasts.md",
+      "logicalName": "podcasts.md",
+      "baseFileName": "podcasts",
+      "dir": "content\/audio\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/ocr\/ocr-ing\/", JSON.parse(`{
+      "path": "content\/ocr\/ocr-ing.md",
+      "logicalName": "ocr-ing.md",
+      "baseFileName": "ocr-ing",
+      "dir": "content\/ocr\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tips\/py-unicode\/", JSON.parse(`{
+      "path": "tips\/py-unicode.md",
+      "logicalName": "py-unicode.md",
+      "baseFileName": "py-unicode",
+      "dir": "tips\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/grammar\/sandhi-samAsa\/", JSON.parse(`{
+      "path": "grammar\/sandhi-samAsa.md",
+      "logicalName": "sandhi-samAsa.md",
+      "baseFileName": "sandhi-samAsa",
+      "dir": "grammar\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/search\/", JSON.parse(`{
+      "path": "search.md",
+      "logicalName": "search.md",
+      "baseFileName": "search",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/site_transliteration\/", JSON.parse(`{
+      "path": "content\/site_transliteration\/_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": "content\/site_transliteration\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/dictionaries\/spellcheck\/", JSON.parse(`{
+      "path": "dictionaries\/spellcheck.md",
+      "logicalName": "spellcheck.md",
+      "baseFileName": "spellcheck",
+      "dir": "dictionaries\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tags\/", JSON.parse(`{
+      "path": "",
+      "logicalName": "",
+      "baseFileName": "",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/fonts\/testing\/", JSON.parse(`{
+      "path": "content\/fonts\/testing.md",
+      "logicalName": "testing.md",
+      "baseFileName": "testing",
+      "dir": "content\/fonts\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/tips\/", JSON.parse(`{
+      "path": "",
+      "logicalName": "",
+      "baseFileName": "",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/translations\/", JSON.parse(`{
+      "path": "content\/translations.md",
+      "logicalName": "translations.md",
+      "baseFileName": "translations",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/websites\/", JSON.parse(`{
+      "path": "content\/websites.md",
+      "logicalName": "websites.md",
+      "baseFileName": "websites",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/content\/wikis\/", JSON.parse(`{
+      "path": "content\/wikis.md",
+      "logicalName": "wikis.md",
+      "baseFileName": "wikis",
+      "dir": "content\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/grammar\/word-from-root\/", JSON.parse(`{
+      "path": "grammar\/word-from-root.md",
+      "logicalName": "word-from-root.md",
+      "baseFileName": "word-from-root",
+      "dir": "grammar\/"
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/custom_site_search\/", JSON.parse(`{
+      "path": "custom_site_search.md",
+      "logicalName": "custom_site_search.md",
+      "baseFileName": "custom_site_search",
+      "dir": ""
+    }`));
+    
+    
+    pageUrlToFileParams.set("\/", JSON.parse(`{
+      "path": "_index.md",
+      "logicalName": "_index.md",
+      "baseFileName": "_index",
+      "dir": ""
+    }`));
+    
+
+    
+    var pageDirectoryToUrl = {};
+    
+
+    function addToPageDirectoryToUrlMap(dirPath, pageUrlTmp) {
+        if (pageDirectoryToUrl.hasOwnProperty(dirPath)) {
+            pageDirectoryToUrl[dirPath].push(pageUrlTmp);
+        } else {
+            pageDirectoryToUrl[dirPath] = [pageUrlTmp];
+        }
+    }
+    
+    
+     
+    addToPageDirectoryToUrlMap("/posts\/", "\/posts\/2018-06-05-ocr-comparison\/");
+     
+    addToPageDirectoryToUrlMap("/posts\/", "\/posts\/2018-06-01-site-moved\/");
+     
+    addToPageDirectoryToUrlMap("/posts\/", "\/posts\/2015-03-22-mountain-view-meetup\/");
+     
+    addToPageDirectoryToUrlMap("/content\/site_transliteration\/", "\/content\/site_transliteration\/aksharamukha_demo\/");
+     
+    addToPageDirectoryToUrlMap("/posts\/", "\/posts\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/");
+     
+    addToPageDirectoryToUrlMap("/dictionaries\/", "\/dictionaries\/");
+     
+    addToPageDirectoryToUrlMap("/content\/fonts\/", "\/content\/fonts\/");
+     
+    addToPageDirectoryToUrlMap("/grammar\/", "\/grammar\/");
+     
+    addToPageDirectoryToUrlMap("/input\/", "\/input\/");
+     
+    addToPageDirectoryToUrlMap("/dictionaries\/formats\/", "\/dictionaries\/formats\/");
+     
+    addToPageDirectoryToUrlMap("/content\/ocr\/", "\/content\/ocr\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/astronomy\/");
+     
+    addToPageDirectoryToUrlMap("/content\/audio\/", "\/content\/audio\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/books\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/categories\/");
+     
+    addToPageDirectoryToUrlMap("/content\/ocr\/", "\/content\/ocr\/corrections\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/deep-reading\/");
+     
+    addToPageDirectoryToUrlMap("/tips\/", "\/tips\/dev-tools\/");
+     
+    addToPageDirectoryToUrlMap("/dictionaries\/", "\/dictionaries\/flashcards\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/tags\/getting_started\/");
+     
+    addToPageDirectoryToUrlMap("/input\/", "\/input\/ime\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/law\/");
+     
+    addToPageDirectoryToUrlMap("/tips\/", "\/tips\/license\/");
+     
+    addToPageDirectoryToUrlMap("/grammar\/", "\/grammar\/misc\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/misc-tools\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/motivation\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/tags\/news\/");
+     
+    addToPageDirectoryToUrlMap("/dictionaries\/", "\/dictionaries\/offline\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/offline-web\/");
+     
+    addToPageDirectoryToUrlMap("/input\/", "\/input\/optitrans\/");
+     
+    addToPageDirectoryToUrlMap("/grammar\/", "\/grammar\/parsing\/");
+     
+    addToPageDirectoryToUrlMap("/content\/audio\/", "\/content\/audio\/podcasts\/");
+     
+    addToPageDirectoryToUrlMap("/content\/ocr\/", "\/content\/ocr\/ocr-ing\/");
+     
+    addToPageDirectoryToUrlMap("/tips\/", "\/tips\/py-unicode\/");
+     
+    addToPageDirectoryToUrlMap("/grammar\/", "\/grammar\/sandhi-samAsa\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/search\/");
+     
+    addToPageDirectoryToUrlMap("/content\/site_transliteration\/", "\/content\/site_transliteration\/");
+     
+    addToPageDirectoryToUrlMap("/dictionaries\/", "\/dictionaries\/spellcheck\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/tags\/");
+     
+    addToPageDirectoryToUrlMap("/content\/fonts\/", "\/content\/fonts\/testing\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/tips\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/translations\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/websites\/");
+     
+    addToPageDirectoryToUrlMap("/content\/", "\/content\/wikis\/");
+     
+    addToPageDirectoryToUrlMap("/grammar\/", "\/grammar\/word-from-root\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/custom_site_search\/");
+     
+    addToPageDirectoryToUrlMap("/", "\/");
+    
+
+</script>
+
+    <script>
+    
+    let pageUrlRelative = "\/input\/ime\/";
+    let pageUrlMinusBasePath = pageUrlRelative.replace(basePath, "/")
+    let pageParams = pageUrlToParams.get(pageUrlMinusBasePath) || {};
+    let pageFileParams = pageUrlToFileParams.get(pageUrlMinusBasePath) || {};
+    let pageSource = "input\/ime.md";
+    console.log(pageSource);
+    var pageDefaults;
+    for (let possiblePageDefaults of pageDefaultsList) {
+      if (pageSource.startsWith(possiblePageDefaults.scope.pathPrefix)) {
+        pageDefaults = possiblePageDefaults.values
+      }
+    }
+    var sidebarId = pageParams.sidebar || pageDefaults.sidebar;
+    var topnavId = pageParams.topnav || pageDefaults.topnav;
+    var footernavId = pageParams.footernav || pageDefaults.footernav;
+    var unicodeScript = pageParams.unicode_script || pageDefaults.unicode_script;
+    
+    </script>
+    <script src="/dist/main-bundle.js"></script>
+    <script src="/dist/transliteration-bundle.js"></script>
+    <script src="/dist/disqus.js"></script>
+    <script src="/dist/ui_lib-bundle.js"></script>
+    <link rel="stylesheet" href="/css/@fortawesome/fontawesome-free/css/solid.min.css">
+    <link rel="stylesheet" href="/css/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+
+    <link rel="alternate" hreflang="sa-Deva" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=devanagari" />
+    <link rel="alternate" hreflang="sa-Knda" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=kannada" />
+    <link rel="alternate" hreflang="sa-Mlym" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=malayalam" />
+    <link rel="alternate" hreflang="sa-Telu" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=telugu" />
+    <link rel="alternate" hreflang="sa-Taml" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=tamil" />
+    <link rel="alternate" hreflang="sa-Beng" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=bengali" />
+    <link rel="alternate" hreflang="sa-Gujr" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=gujarati" />
+    <link rel="alternate" hreflang="sa-Guru" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=gurmukhi" />
+    <link rel="alternate" hreflang="sa-Orya" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=oriya" />
+    <link rel="alternate" hreflang="sa-Latn" href="https://sanskrit-coders.github.io/input/ime/?translitration_target=iast" />
+    
+  </head>
+
+  <body class="ma0 bg-near-white">
+
+    
+<header class="p-1 bg-yellow">
+    <nav role="navigation">
+      <div id="div_top_bar" class="row">
+        <div class="col-md-3 justify-content-start">
+          <a  href="/" class="btn col border">
+            <i class="fas fa-gopuram ">संस्कृत-साङ्गणकाः Sanskrit Programmers</i>
+          </a>
+        </div>
+        <div id="div_top_bar_right" class="col-md-auto d-flex justify-content-center">
+          <form action="/search">
+            <input id="titleSearchInputBox" placeholder="शीर्षिकान्विष्यताम्" name="s"><i class="btn fas fa-search "></i>
+          </form>
+          <a href="/custom_site_search/"  class="btn btn-default">Full search</a>
+          <select name="transliterationDropdown" size="1" onchange="module_transliteration.updateTransliteration()">
+            <option value="devanagari" selected="">स</option>
+            <option value="iast">ā</option>
+            <option value="kannada">ಅ</option>
+            <option value="malayalam">അ</option>
+            <option value="telugu">క</option>
+            <option value="tamil">அ</option>
+            <option value="bengali">অ</option>
+            <option value="gujarati">અ</option>
+            <option value="gurmukhi">ਅ</option>
+            <option value="oriya">ଅ</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+</header>
+
+    
+    <div class="row">
+      
+      <aside class="col-md-3 card border " id="sidebar">
+        <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between">
+          <a data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body">
+            Menu <i class="fas fa-caret-down"></i></a>
+        </div>
+        <nav class="card-body p-0" id="sidebar_body">
+        <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
+        </ul>
+        </nav>
+      </aside>
+      <main class="col p-3" role="main">
+        
+<header class='border d-flex justify-content-between'>
+    <h1 id="IME/ typing">IME/ typing</h1>
+    <a id="editLink" class="btn btn-primary"  href="https://github.com/sanskrit-coders/sanskrit-coders.github.io/edit/hugo-source/content/input/ime.md"><i class="fas fa-edit"></i></a>
+</header>
+<article>
+  <aside id="toc_card" class="card border ">
+    <div id="toc_header" class="card-title border d-flex justify-content-between">
+        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
+          What's in this page? <i class="fas fa-caret-down"></i> </a>
+    </div>
+    <div id="toc_body" class="card-body collapse p-0">
+      
+      <ul id="toc_ul" class="list p-0">
+      </ul>
+    </div>
+  </aside>
+  <div id="post_content">
+  
+
+<h2 id="multi-platform-solutions">Multi-platform solutions</h2>
+
+<ul>
+<li>Keyman (from the christian org SIL)
+
+<ul>
+<li>Downloaded site <a href="https://keyman.com/">here</a>.</li>
+<li>devanAgarI ITRANS-based vedic keyboard - <a href="https://keyman.com/keyboards/itrans_devanagari_sanskrit_vedic">KM cloud</a>.</li>
+<li>web based version <a href="https://sanskritdocuments.org/learning_tools/sanskritvedic.html">here</a>.</li>
+</ul></li>
+</ul>
+
+<h2 id="linux">Linux</h2>
+
+<h3 id="m17n-with-ibus">m17n with ibus.</h3>
+
+<h4 id="necessary-packages">Necessary packages:</h4>
+
+<ul>
+<li>debian search <a href="https://packages.debian.org/search?searchon=names&amp;keywords=m17n">here</a>.</li>
+<li> Suggested ubuntu packages: ibus sanskrit iBus-m17n ibus-qt4 m17n-db m17n-contrib ttf-indic-fonts . See our <a href="https://sites.google.com/site/sanskritcode/optitrans">note here</a>.</li>
+</ul>
+
+<h4 id="debugging-update-tips">Debugging / update tips</h4>
+
+<ul>
+<li>Restart ibus:  ibus-daemon -Rd</li>
+<li>MDEBUG_INPUT=1 m17n-edit &ndash;im hi-optitransv2</li>
+<li>Configure: m17n-im-config or <a href="http://i.imgur.com/vtq0njh.png">http://i.imgur.com/vtq0njh.png</a></li>
+</ul>
+
+<h4 id="optitrans">Optitrans</h4>
+
+<ul>
+<li>Linux ibus hindi/ sanskrit/ kannada users: For your typing convenience download and use - see <a href="optitrans.md">optitrans</a>.</li>
+</ul>
+
+<h2 id="windows">Windows</h2>
+
+<p>(<a href="http://en.wikipedia.org/wiki/Intelligent_Input_Bus">I</a>, <a href="http://www.google.com/ime/transliteration/">G</a>, <a href="http://specials.msn.co.in/ilit/WebEmbed.aspx?language=Kannada">MSN</a>, <a href="https://sites.google.com/site/bhashaime/">Bhasha IME</a>..) to input Indic script directly without copy-pasting.</p>
+
+<h2 id="mac">MAC</h2>
+
+<ul>
+<li>shreevatsa uses a modified version of <a href="http://www.palitext.com/subpages/PC_Unicode.htm">PC-unicode</a>.</li>
+<li>Lipika IME for IOS and OS X - <a href="https://github.com/ratreya/lipika-ime">github wiki</a>.</li>
+<li>See <a href="http://www.hpnadig.net/blog/typing-kannada-mac-uim-and-m17n-mac-os-x">here</a>.  <a href="http://code.google.com/p/macuim/">Mac UIM</a> lets you use m17n (shrIvatsa uses this).</li>
+<li>for IAST: <a href="https://shreevatsa.wordpress.com/2013/01/22/a-better-keyboard-layout-for-typing-iast-on-mac-os-x-based-on-easyunicode/">EasyIAST</a>.</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+
+<aside class="card border" id="section-tree-item-input_ime_md">
+    <div class="card-title bg-light-gray border d-flex justify-content-between">
+        <a href="https://sanskrit-coders.github.io/input/ime/">IME/ typing </a>
+        <a data-toggle="collapse" href="#section-tree-item-body-input_ime_md" role="button" aria-expanded="false" aria-controls="section-tree-item-body-input_ime_md" >…<i class="fas fa-caret-down" class="collapsed"></i> </a>
+    </div>
+    <nav id="section-tree-item-body-input_ime_md" class="card-body p-0 collapse">
+        
+        <li>draft: false</li>
+        
+        <li>iscjklanguage: false</li>
+        
+        <li>title: IME/ typing</li>
+        
+    </nav>
+</aside>
+
+
+      </main>
+    </div>
+    <footer class="bg-yellow  p-1" role="contentinfo">
+  <div id="disqus_thread"></div>
+  <div id="div_footer_bar" class="container-fluid d-flex justify-content-between">
+    <a class="btn btn-secondary" href="https://github.com/sanskrit-coders/sanskrit-coders.github.io/issues/new" >
+      प्रतिस्पन्दः
+    </a>
+    <div class="btn small border">
+      Built on 2019 Dec 2 05:41:22 UTC
+    </div>
+    <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+  </div>
+</footer>
+
+  </body>
+  <script type='text/javascript'>
+    
+    
+    
+    module_main.default.onDocumentReadyTasks();
+  </script>
+</html>

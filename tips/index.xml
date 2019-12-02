@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on संस्कृत-साङ्गणकाः Sanskrit Programmers</title>
+    <link>https://sanskrit-coders.github.io/tips/</link>
+    <description>Recent content in Tips on संस्कृत-साङ्गणकाः Sanskrit Programmers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://sanskrit-coders.github.io/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dev tools</title>
+      <link>https://sanskrit-coders.github.io/tips/dev-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/dev-tools/</guid>
+      <description>Public file distribution  archive.org github releases  File transfers: Dropbox, GDrive, WeTransfer
+Video/ audio conferencing, screen sharing
+ zoom.us - good quality, wide device coverage. whatsapp calls - occasionally bad quality  Project tracking
+ trello.com - list tasks (assignable, can specify due date, can track activity), allow private boards  Remote collaborative coding  github - very popular, supports releases, issue tracking etc..  दोषं शोधयित्वा &amp;ldquo;pull&amp;rdquo; अभ्यर्थनां प्रेषयितुम् अर्हति। ( https://help.</description>
+    </item>
+    
+    <item>
+      <title>Lincense and Source</title>
+      <link>https://sanskrit-coders.github.io/tips/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/license/</guid>
+      <description>Why open source? For us to rapidly achieve our dreams, it is important that we are able to rapidly build on each other’ work, without unnecessary duplication of effort. For this reason open source software and freely available data are important.
+Of course, non-community based, closed source software and restricted data are very valuable and useful to end users (eg spokensanskrit.de), but a previous attempt tells me that it can be difficult/ slow to elicit cooperation/ responsiveness when it comes to building on that work.</description>
+    </item>
+    
+    <item>
+      <title>Py Unicode</title>
+      <link>https://sanskrit-coders.github.io/tips/py-unicode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/py-unicode/</guid>
+      <description>[ Culled from emails by shreevatsa and anubhav. ]
+General tips  Detailed information  You canread thisor the introductionsection hereto get a rough understanding of the issues involved, as I mentioned before onthis mailing list here.] Handling text correctly Getting Unicode right in Python  When programming in Python, always remain aware of whether a particular object is &amp;ldquo;unicode&amp;rdquo; (code points) or &amp;ldquo;str&amp;rdquo; (bytes).  Basically, Unicode code points logically represent a character (like &amp;ldquo;092E: DEVANAGARI LETTER MA&amp;rdquo;), independent of encoding.</description>
+    </item>
+    
+  </channel>
+</rss>

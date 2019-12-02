@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on संस्कृत-साङ्गणकाः Sanskrit Programmers</title>
+    <link>https://sanskrit-coders.github.io/tags/news/</link>
+    <description>Recent content in News on संस्कृत-साङ्गणकाः Sanskrit Programmers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sanskrit-coders.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SanskritOCR vs. Google OCR</title>
+      <link>https://sanskrit-coders.github.io/posts/2018-06-05-ocr-comparison/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2018-06-05-ocr-comparison/</guid>
+      <description>As far as I am aware, there are two options for high-quality Sanskrit OCR that I know of:
+ the SanskritOCR tool created by Dr. Oliver Hellwig the Google OCR API exposed through the Google Cloud Vision API  I was curious to get a sense of how these two tools compared on a sample page, and whether there was a clear difference in quality between the two. Here I&amp;rsquo;ll describe how I conducted this comparison and my results.</description>
+    </item>
+    
+    <item>
+      <title>Sanskrit software catalog site moved.</title>
+      <link>https://sanskrit-coders.github.io/posts/2018-06-01-site-moved/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2018-06-01-site-moved/</guid>
+      <description>The past I&amp;rsquo;d once created https://sites.google.com/site/sanskritcode/ mainly to catalogue sanskrit software and services out there. Many people found it useful. But it had the following drawbacks:
+ I hoped that it would attract contributions and corrections, but it did not happen. So links and content easily went stale. Besides, that site relied on the beneficence of Google for its availability - and data was not easily exportable.  Moving to a Jekyll based github-wiki Later, I moved all the content to https://sanskrit-coders.</description>
+    </item>
+    
+    <item>
+      <title>Mountain view Sanskrit meetup</title>
+      <link>https://sanskrit-coders.github.io/posts/2015-03-22-mountain-view-meetup/</link>
+      <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2015-03-22-mountain-view-meetup/</guid>
+      <description>मार्च २२, २०१५ (मौण्टैन-व्यू-नगरम्) अत्र।</description>
+    </item>
+    
+  </channel>
+</rss>

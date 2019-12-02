@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>संस्कृत-साङ्गणकाः Sanskrit coders on संस्कृत-साङ्गणकाः Sanskrit Programmers</title>
+    <link>https://sanskrit-coders.github.io/</link>
+    <description>Recent content in संस्कृत-साङ्गणकाः Sanskrit coders on संस्कृत-साङ्गणकाः Sanskrit Programmers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sanskrit-coders.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SanskritOCR vs. Google OCR</title>
+      <link>https://sanskrit-coders.github.io/posts/2018-06-05-ocr-comparison/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2018-06-05-ocr-comparison/</guid>
+      <description>As far as I am aware, there are two options for high-quality Sanskrit OCR that I know of:
+ the SanskritOCR tool created by Dr. Oliver Hellwig the Google OCR API exposed through the Google Cloud Vision API  I was curious to get a sense of how these two tools compared on a sample page, and whether there was a clear difference in quality between the two. Here I&amp;rsquo;ll describe how I conducted this comparison and my results.</description>
+    </item>
+    
+    <item>
+      <title>Sanskrit software catalog site moved.</title>
+      <link>https://sanskrit-coders.github.io/posts/2018-06-01-site-moved/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2018-06-01-site-moved/</guid>
+      <description>The past I&amp;rsquo;d once created https://sites.google.com/site/sanskritcode/ mainly to catalogue sanskrit software and services out there. Many people found it useful. But it had the following drawbacks:
+ I hoped that it would attract contributions and corrections, but it did not happen. So links and content easily went stale. Besides, that site relied on the beneficence of Google for its availability - and data was not easily exportable.  Moving to a Jekyll based github-wiki Later, I moved all the content to https://sanskrit-coders.</description>
+    </item>
+    
+    <item>
+      <title>Mountain view Sanskrit meetup</title>
+      <link>https://sanskrit-coders.github.io/posts/2015-03-22-mountain-view-meetup/</link>
+      <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/posts/2015-03-22-mountain-view-meetup/</guid>
+      <description>मार्च २२, २०१५ (मौण्टैन-व्यू-नगरम्) अत्र।</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sanskrit-coders.github.io/content/site_transliteration/aksharamukha_demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/site_transliteration/aksharamukha_demo/</guid>
+      <description>      ये धर्मा हेतु  ये धर्मा हेतु-प्रभवा हेतुं तेषां तथागतो ह्यवदत् तेषां च यो निरोध एवं वादी महाश्रमण I know I am not here but still  Randsome stuff Actualy stuff  𐬠𐬋𐬙𐬀𐬠𐬁𐬴𐬁𐬌𐬌𐬁𐬨   Norma  మహాశ్రమణ    (ख) संस्कृतपाठः भारतीयभाषायाम्-आर्यत्रिरत्नानुस्मृतिसूत्रम् भोटभाषायाम्-फग्स्-पा-दकोन्-म्च्छोग्-ग्सुम्-जेस्-सु-ड्रन्-पा-म्दो नमः सर्वबुद्धबोधिसत्त्वेभ्यः (बुद्धानुस्मृतिः) इत्यपि बुद्धो भगवांस्तथागतोऽर्हन् सम्यक्संबुद्धो विद्याचरणसम्पन्नः सुगतो लोकविदनुत्तरः पुरुषदम्यसारथिः शास्ता देवमनुष्याणां बुद्धो भगवानिति। निष्यन्दः स तथागतः पुण्यानाम्, अविप्रणाशः कुशलमूलानाम्, अलङ्कृतः क्षान्त्या, आलयः पुण्यनिधानानाम्, चित्रितोऽनुव्यञ्जनैः कुसुमितो लक्षणैः, प्रतिरूपो गोचरेण, अप्रतिकूलो दर्शनेन, अभिरतिः श्रद्धा(शुद्धा)धिमुक्तानाम्, अनभिभूतः प्रज्ञया, अनवमर्दनीयो बलैः, शास्ता सर्वसत्त्वानाम्, पिता बोधिसत्त्वानाम्, राजा आर्यपुद्गलानाम्, सार्थवाहः निर्वाणनगरसम्प्रस्थितानाम्, अप्रमेयो ज्ञानेन, अचिन्त्यः प्रतिभानेन, विशुद्धः स्वरेण, आस्वदनीयो घोषेण, असेचनको रूपेण, अप्रतिसमः कायेन, अलिप्तः कामैः, अनुपलिप्तो रूपैः असंसृष्ट आरूप्यैः, विप्रमुक्तः स्कन्धेभ्यः, विसम्प्रयुक्तो धातुभिः, संवृत आयतनैः, प्रच्छिन्नो ग्रन्थैः, विमुक्तः परिदाघ्नैः, परिमुक्तस्तृष्णया, ओघादुत्तीर्णः परिपूर्णो ज्ञानेन, प्रतिष्ठितोऽतीतानागतप्रत्युत्पन्नानां बुद्धानां भगवतां ज्ञाने, अप्रतिष्ठितो निर्वाणे, स्थितो भूतकोट्याम्, स्थितः सर्वसत्त्वालोकनीयायां भूमौ, सर्व इमे तथागतानां विशेषतः सम्यग् गुणाः। (धर्मानुस्मृतिः) सद्धर्मस्तु आदौ कल्याणः, मध्ये कल्याणः, पर्यवसाने कल्याणः, स्वर्थः सुव्यञ्जनः, केवलः, परिपूर्णः, परिशुद्धः, पर्यवदातः, स्वाख्यातः भगवतो धर्मः, सान्दृष्टिकः, निर्ज्वरः, आकालिकः, औपनायिकः, ऐहिपश्यिकः, प्रत्यात्मवेदनीयो विज्ञैः, स्वाख्यातो भगवतो धर्मविनयः सुप्रवेदितः नैर्याणिकः, संबोधिगामी, अभिन्नः संस्तूपः, सप्रतिशरणः, छिन्नप्लोतिकः। (संघानुस्मृतिः) सुप्रतिपन्नो भगवत आर्यसंघः, न्यायप्रतिपन्नः, ऋजुप्रतिपन्नः, सामीचीप्रतिपन्नः, अञ्जलीकरणीयः, सामीचीकरणीयः, पुण्यश्रीक्षेत्रः, महादक्षिणापरिशोधकः, प्राहवनीयः, आहवनीयः। ॥ आर्यत्रिरत्नानुस्मृतिसूत्रं समाप्तम्॥ शास्त्राणि यानि प्रचलन्ति मनुष्यलोके संख्या लिपिश्च गणनापि च धातुतन्त्रम्। ये शिल्पयोग पृथु लौकिक अप्रमेयाः तेष्वेषु शिक्षितु पुरा बहुकल्पकोट्यः॥१॥ किं तू जनस्य अनुवर्तनतां करोति लिपिशालमागतु सुशिक्षितु शिष्यणार्थम्। परिपाचनार्थ बहुदारक अग्रयाने अन्यांश्च सत्त्वनयुतानमृते विनेतुम्॥२॥ लोकोत्तरेषु चतुसत्यपथे विधिज्ञो हेतुप्रतीत्यकुशलो यथ संभवन्ति। यथ चानिरोधक्षयु संस्थितु शीतिभावः तस्मिन्विधिज्ञ किमथो लिपिशास्त्रमात्रे॥३॥ नेतस्य आचरिय उत्तरि वा त्रिलोके  सर्वेषु देवमनुजेष्वयमेव जेष्ठः।  नामापि तेष लिपिनां न हि वित्थ यूयं यत्रेषु शिक्षितु पुरा बहुकल्पकोट्यः॥४॥ सो चित्तधार जगतां विविधा विचित्रा एकक्षणेन अयु जानति शुद्धसत्त्वः। अदृश्यरूपरहितस्य गतिं च वेत्ति किं वा पुनोऽथ लिपिनोऽक्षरदृश्यरूपाम्॥५॥ इत्युक्त्वा स देवपुत्रो बोधिसत्त्वं दिव्यैः कुसुमैरभ्यर्च्य तत्रैवान्तर्दधे। त  </description>
+    </item>
+    
+    <item>
+      <title>Astronomy</title>
+      <link>https://sanskrit-coders.github.io/astronomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/astronomy/</guid>
+      <description>Stellarium is opensource (launchpad, github). It comes with a developing &amp;ldquo;Indian vedic skyculture&amp;rdquo;, and allows translations with voting (rosetta). DExxx ephemerides from NASA&amp;rsquo;s JPL Swiss Ephemeris is based upon the planetary and lunar ephemeris DE431 developed by NASA&amp;rsquo;s Jet Propulsion Laboratory, compressed.
+ Mailing list - swisseph/ Test page - here. Python wrapper - pyswisseph. git here. Vedic astrology extensions
+ jagannatha hora - Narasimha rao mudgala hora - ajit panchangam - kArttika.</description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://sanskrit-coders.github.io/content/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/books/</guid>
+      <description>e-books Advantages फलकादिषु जङ्गमयन्त्रेषु संस्कृतपुस्तकपठनं मे ऽतिरोचते। उदाहरणमत्र वीक्षेथाम्। तेनाधिकसंस्कृतपुस्तकानि तथा प्रकाश्येरन्निति काङ्क्षा मदीया। एवं प्रकाशनं नास्ति कठिनम्। [    Preparing the files Make epub book
+ Using Calibre ( on Ubuntu etc..)  Create an &amp;ldquo;empty book&amp;rdquo;. Create a html with contents (Google Play is fussy about tags. Content should be within  tag. Use a template. Add that content html with Add Books-&amp;gt; Add files to selected book records.</description>
+    </item>
+    
+    <item>
+      <title>Corrections</title>
+      <link>https://sanskrit-coders.github.io/content/ocr/corrections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/ocr/corrections/</guid>
+      <description>Tools One can use something like Distributed Proofreaders (http://www.pgdp.net/) or Wikisource (see screenshots here) to proofread the text by seeing the scanned book page beside it.
+[    Using wikisource infrastructure: see here. Common steps:
+ Upload file to archive. Use IA-Upload tool which automatically uploads files to Commons. Create an index page (example).  Copy book details from the djvu upload page, fill Pages field with some variant of .</description>
+    </item>
+    
+    <item>
+      <title>Deep reading</title>
+      <link>https://sanskrit-coders.github.io/content/deep-reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/deep-reading/</guid>
+      <description> Presenting sources with commentaries  Ideas: sefaria jewish texts [git], perseus, gItA-supersite.
+  </description>
+    </item>
+    
+    <item>
+      <title>Dev tools</title>
+      <link>https://sanskrit-coders.github.io/tips/dev-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/dev-tools/</guid>
+      <description>Public file distribution  archive.org github releases  File transfers: Dropbox, GDrive, WeTransfer
+Video/ audio conferencing, screen sharing
+ zoom.us - good quality, wide device coverage. whatsapp calls - occasionally bad quality  Project tracking
+ trello.com - list tasks (assignable, can specify due date, can track activity), allow private boards  Remote collaborative coding  github - very popular, supports releases, issue tracking etc..  दोषं शोधयित्वा &amp;ldquo;pull&amp;rdquo; अभ्यर्थनां प्रेषयितुम् अर्हति। ( https://help.</description>
+    </item>
+    
+    <item>
+      <title>Flashcards</title>
+      <link>https://sanskrit-coders.github.io/dictionaries/flashcards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/dictionaries/flashcards/</guid>
+      <description> Flashcards for use with opensource, multi-platform anki software: अत्र च अत्र।
+ Import from csv - first field; second field; tags
+ Can use &amp;lt;br&amp;gt; for newlines, select appropriate option while importing.   Manual.
+  Quizlet Sanskrit.
+ Flash-cards (Amarakosha, dhAtu-pATha etc..).
+  </description>
+    </item>
+    
+    <item>
+      <title>IME/ typing</title>
+      <link>https://sanskrit-coders.github.io/input/ime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/input/ime/</guid>
+      <description>Multi-platform solutions  Keyman (from the christian org SIL)  Downloaded site here. devanAgarI ITRANS-based vedic keyboard - KM cloud. web based version here.   Linux m17n with ibus. Necessary packages:  debian search here.  Suggested ubuntu packages: ibus sanskrit iBus-m17n ibus-qt4 m17n-db m17n-contrib ttf-indic-fonts . See our note here.  Debugging / update tips  Restart ibus: ibus-daemon -Rd MDEBUG_INPUT=1 m17n-edit &amp;ndash;im hi-optitransv2 Configure: m17n-im-config or http://i.</description>
+    </item>
+    
+    <item>
+      <title>Law- copyright etc..</title>
+      <link>https://sanskrit-coders.github.io/content/law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/law/</guid>
+      <description>Intro Who holds copyright?  &amp;ldquo;As a general principle, although copyright originally belongs to the author, at the time of publication it is transferred to the publisher, or at least the publisher requests from the author an exclusive license / monopoly on distribution. (I think in the US, copyright always ultimately rests with the author and it&amp;rsquo;s just that the author is constrained by the terms of their agreement with the publisher, but in India I believe copyright is usually transferred to the publisher entirely.</description>
+    </item>
+    
+    <item>
+      <title>Lincense and Source</title>
+      <link>https://sanskrit-coders.github.io/tips/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/license/</guid>
+      <description>Why open source? For us to rapidly achieve our dreams, it is important that we are able to rapidly build on each other’ work, without unnecessary duplication of effort. For this reason open source software and freely available data are important.
+Of course, non-community based, closed source software and restricted data are very valuable and useful to end users (eg spokensanskrit.de), but a previous attempt tells me that it can be difficult/ slow to elicit cooperation/ responsiveness when it comes to building on that work.</description>
+    </item>
+    
+    <item>
+      <title>Misc tools</title>
+      <link>https://sanskrit-coders.github.io/grammar/misc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/grammar/misc/</guid>
+      <description> Tools to help understand grammer sUtras (3V, T, D, A, Ar). Also see apps linked under dictionaries.
+ General aShTAdhyAyI simulation (aruNa, )
+ pratyAhAra-tools [D, V]. Domain specific languages tailored for the saMskR^ita grammar are beginning to be seen (V).   </description>
+    </item>
+    
+    <item>
+      <title>Misc tools</title>
+      <link>https://sanskrit-coders.github.io/misc-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/misc-tools/</guid>
+      <description>DLI downloaders
+ Seehere. Sh.  Reading scanned books on tablet
+ Google Play does a decent job.   Verse Web Tools to identify metre
+ S telugu chandas site (D IITB).  Libraries:
+ python pip chandas package (C C2).  Interesting collections  Maven and pypi search terms:
+ Indic Transliterate Transliteration sanskrit hindi  https://github.com/sanskrit-coders
+ https://github.com/libindic
+ https://github.com/vedavaapi
+ https://github.com/egangotri
+  Public DB + API List A list of publicly accessible databases here (This can potentially avoid duplication of labor and speed up progress).</description>
+    </item>
+    
+    <item>
+      <title>Motivations</title>
+      <link>https://sanskrit-coders.github.io/motivation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/motivation/</guid>
+      <description>Following discussions (1, 2) in the samskrita mailing list and some positive responses, we have started this project.
+Volunteer effort is a labor of love, and many of us here carry deep sentiments, an emotional attachment, about saMskRta. In fact, many of us yearn for the day saMskRta is revived as a spoken language, even as we use it whenever possible in our daily life. That is why contributing to sanskrit tools is a natural outlet.</description>
+    </item>
+    
+    <item>
+      <title>Offline dicts</title>
+      <link>https://sanskrit-coders.github.io/dictionaries/offline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/dictionaries/offline/</guid>
+      <description>Tools elsewhere  Apps! [sp, SJ, GP, BV_GOI]  Make them available on phones as convenient apps (S) and as stardict/ goldendict files (here, A, H). On windows here.   Stardict Introduction: Stardict dictionaries are versatile and easy to use with a number of programs on a variety of devices. This project focuses on making available Indian language dictionaries in this format and enabling their easy installation and use.</description>
+    </item>
+    
+    <item>
+      <title>Offline websites</title>
+      <link>https://sanskrit-coders.github.io/content/offline-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/offline-web/</guid>
+      <description>Zim Intro: Zim Zim format( http://www.openzim.org/wiki/Main_Page) is very suitable for making many websites and online books available offline. All this is compressed into a single file of html pages. Thus formatting, java scripts, navigation links to next shlokas, sargas, images, searching, everything is preserved. And all platforms have zim client called kiwix. kiwix-intro .
+Uses Note from shrI dAmodara:
+=======
+To make our texts accessible to all present day people, only way is made it avialble in electronic format , which they have access, now a days more than books.</description>
+    </item>
+    
+    <item>
+      <title>Optitrans</title>
+      <link>https://sanskrit-coders.github.io/input/optitrans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/input/optitrans/</guid>
+      <description>Objective OptiTrans defines a simple set of rules to produce characters in Indic scripts using ASCII characters. These rules are defined by a transiteration map, and meta-rules describing contextual changes in the interpretation of these rules.
+Don&amp;rsquo;t worry - It is simple. Though the rules are intelleligently designed (building on prior experience and expertise), there is no machine learning involved in the actual application of these rules.
+Desiderata (Requirements). The (sometimes competing) objectives are</description>
+    </item>
+    
+    <item>
+      <title>Parsing and Translation</title>
+      <link>https://sanskrit-coders.github.io/grammar/parsing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/grammar/parsing/</guid>
+      <description> Mechanically parsing (H) Sanskrit text, doing part of speech tagging(D). Producing, standardizing Sanskrit corpora (I, Ms..).
+ Translating Sanskrit into a more familiar language. (F=H, 2H, BuSt)
+ kramapATha-generator (B).
+ Help beginning Sanskrit readers by marking up roots and vibhakti-s (F).
+  </description>
+    </item>
+    
+    <item>
+      <title>Podcasts</title>
+      <link>https://sanskrit-coders.github.io/content/audio/podcasts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/audio/podcasts/</guid>
+      <description>Why podcasting?  Listening to stuff is easier. Several people (such as myself) might prefer to listen to audio books and listen to lectures (perhaps during long walks or commutes) rather than read or watch them. There are many popular tools in a variety of platforms to subscribe and listen to podcasts (see subscription guide SB16.). (I use Doggcatcher paid on Android). It turns out to be easier to listen to audio files in this way without the chores such as manual downloads and checking for updates.</description>
+    </item>
+    
+    <item>
+      <title>Procedure</title>
+      <link>https://sanskrit-coders.github.io/content/ocr/ocr-ing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/ocr/ocr-ing/</guid>
+      <description>OCR‎ &amp;gt; ‎
+1. OCR-ing What&amp;rsquo;s a good OCR?  A good OCR has high accuracy. It may be better to keep the OCR result as separate pages, and have them associated with the original images. This can help in the following ways:  helps proofreading, as described here. it may be helpful to include with each entry a link to the page in the book, so that even if the reader/user suspects OCR errors, they can click on the link and see the original page.</description>
+    </item>
+    
+    <item>
+      <title>Py Unicode</title>
+      <link>https://sanskrit-coders.github.io/tips/py-unicode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/tips/py-unicode/</guid>
+      <description>[ Culled from emails by shreevatsa and anubhav. ]
+General tips  Detailed information  You canread thisor the introductionsection hereto get a rough understanding of the issues involved, as I mentioned before onthis mailing list here.] Handling text correctly Getting Unicode right in Python  When programming in Python, always remain aware of whether a particular object is &amp;ldquo;unicode&amp;rdquo; (code points) or &amp;ldquo;str&amp;rdquo; (bytes).  Basically, Unicode code points logically represent a character (like &amp;ldquo;092E: DEVANAGARI LETTER MA&amp;rdquo;), independent of encoding.</description>
+    </item>
+    
+    <item>
+      <title>Sandhi and samAsa</title>
+      <link>https://sanskrit-coders.github.io/grammar/sandhi-samAsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/grammar/sandhi-samAsa/</guid>
+      <description> Sandhi and samAsa (D, F, H, MH, C, C2, Sch)
+ sandhi and samAsa analysis (1H, 2H)
+ papers (O_DE)
+  </description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>https://sanskrit-coders.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ` [outputs] home = [&amp;quot;HTML&amp;quot;, &amp;quot;JSON&amp;quot;] \`</description>
+    </item>
+    
+    <item>
+      <title>Spell checking</title>
+      <link>https://sanskrit-coders.github.io/dictionaries/spellcheck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/dictionaries/spellcheck/</guid>
+      <description>  in several Indian languages: hunspell here
+ hindi-hunspell (includes sanskrit) .
+ hindI wiki list here .
+  hunspell  intro - suares. dic file
+ format: numwords in first non-comment line, followed by sorted word lines.
+  affix file
+ aspell supposedly stopped development in 2011, while hunspell is used in multiple products like chrome and firefox.
+  </description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://sanskrit-coders.github.io/content/fonts/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/fonts/testing/</guid>
+      <description>Intro  One can only test sequences in font+rendering engine combination.  To test using the harfbuzz rendering engine: Instructions here.
+  hb-view /usr/share/fonts/truetype/ttf-devanagari-fonts/sahadeva.ttf अत्र  pango Supposedly can render with HarBuzz or Uniscribe or CoreText!
+ pango-view &amp;ndash;font &amp;ldquo;Sahadeva 40&amp;rdquo; -t अत्र pango-view &amp;ndash;markup &amp;ndash;text &amp;lsquo;&amp;lt;span font_family=&amp;ldquo;FreeSerif&amp;rdquo; lang=&amp;ldquo;sa&amp;rdquo; fallback=&amp;ldquo;false&amp;rdquo;&amp;gt; अत्र\&amp;rsquo;
+ Markup language here.
+  Testing on Chrome Fonts can also be tested on chrome by following a two step process.</description>
+    </item>
+    
+    <item>
+      <title>Translations</title>
+      <link>https://sanskrit-coders.github.io/content/translations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/translations/</guid>
+      <description> Translation projects  Ubuntu/ launchpad projects: ubuntu-l10n-sa team. Facebook in Sanskrit : Go here, vote, contribute (if you are confident about your knowledge of Sanskrit). Wikis:  hindI. language status MW. -   Apps  Translation UI-s [V - P,]
+ Automated translation tools listed [elsewhere on the site]().
+  </description>
+    </item>
+    
+    <item>
+      <title>Websites and blogs</title>
+      <link>https://sanskrit-coders.github.io/content/websites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/websites/</guid>
+      <description>Site hosting services  http://sites.google.com  Disadvantages Google holds your data, which is not easily exportable. New style websites can&amp;rsquo;t be added to Google search console.    Static site generators  Jekyll  Can be used as a wiki - just look at the source for this site. Also see our https://sanskrit-coders.github.io/sanskrit-documentation-theme    Search engine optimization  Google (Includes indexing for custom search)  Observe traffic patterns and crawl status at Search console Submitting a sitemap there submits multiple pages at once for indexing.</description>
+    </item>
+    
+    <item>
+      <title>Wikis</title>
+      <link>https://sanskrit-coders.github.io/content/wikis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/content/wikis/</guid>
+      <description>wikipedia and co  Metawiki stewards  Misc requests : Add gadget. Bot requests: metawiki  wikidata as a structured db!  Properties  list here. items with a property : query . subitems : query.  Setup  Activate useful gadgets in preferences page.   sa-wikisource  admin election.  Export wikisource to epub etc..  Tool.   Wikibots  sanskritnlpbot  approval request [sa-wikisource, then in metawiki, not - w16] Email [SP16]   Presenting sources with commentaries  Ideas: sefaria jewish texts [git], perseus, gItA-supersite.</description>
+    </item>
+    
+    <item>
+      <title>Word from root</title>
+      <link>https://sanskrit-coders.github.io/grammar/word-from-root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/grammar/word-from-root/</guid>
+      <description>prAtipadika declension  Produce declensions while showing sUtra-s (D).
+ Inflected word generation is usually based on the &amp;lsquo;word and paradigm&amp;rsquo; model, close to the work such as ruupa chandrikaa which gives the naamaruupaavalii for &amp;lsquo;typical&amp;rsquo; words ending in different var.nas in different lingas.
+ (D, I=H1, H, H2, F, B) Apps (ViPra) Limitation: However, as a generative model the above is not perfect because, not being based firmly on pANini&amp;rsquo;s rules (which separate saMskR^ita from apabhraMShA), they may generate wrong inflections.</description>
+    </item>
+    
+    <item>
+      <title>जालक्षेत्रमिदमन्विष्यताम्</title>
+      <link>https://sanskrit-coders.github.io/custom_site_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanskrit-coders.github.io/custom_site_search/</guid>
+      <description>  (function() { var cx = &#39;003441740804712584864:hj_depehpoo&#39;; var gcse = document.createElement(&#39;script&#39;); gcse.type = &#39;text/javascript&#39;; gcse.async = true; gcse.src = &#39;https://cse.google.com/cse.js?cx=&#39; + cx; var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(gcse, s); })();    </description>
+    </item>
+    
+  </channel>
+</rss>
